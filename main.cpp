@@ -88,7 +88,9 @@ int main(int argc, char* argv[]){
             }
 
         }
-        (*output) << "\n";
+        if(!image_out){
+            (*output) << "\n";
+        }
     }
 
     if(image_out){
